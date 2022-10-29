@@ -1,19 +1,17 @@
 from ast import match_case
 from difflib import Match
 
-
-print('---Coneversor de medidas---')
-print('(M) metros')
-print('(C) centimetros')
-print('(L) litros')
-tipo = input("O que deseja converter? ")
-def conversor(tipo):
-    match tipo:
-        case 'm':
-            print("Faremos a conversão")
-        case 'c':
-            print("Aguarde")
-        case 'l':
-            print("Em andamento")
+#Neste exercício só estamos testando a estrutura match case
+#Após o exercício 50, faremos todos novamnete com aplicações reais
+cod = input('Digite o código do produto: ')
+def conversor(cod):
+    match cod:
+        case '100':
+            print("Detergente R$ 1,59")
+        case '200':
+            print("Arroz R$ 15,69")
+        case '300':
+            print("Feijão R$ 8,00")
         case _:
-            print('Não posso fazer este tipo de conversão')
+            print('Não existe esse produto na loja')
+print(conversor(cod))
