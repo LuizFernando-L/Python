@@ -41,3 +41,14 @@ print(f"Receberá emprestimo = {conta_pf1.solicitar_emprestimo(2000)}")
 conta_pf1.sacar((int(input("Quanto deseja sacar? "))))
 print(f"Saldo atual é {conta_pf1.obter_saldo()}")
 print(f"Receberá empréstimo = ", conta_pf1.solicitar_emprestimo(2000))
+
+#In21
+conta_pj1 = ContaPF(input("Digite seu Nome: "), input("Digite seu CPF: "))
+conta_pj1.depositar(int(input("Quanto deseja depositar: ")))
+
+print(f"Seu saldo é {conta_pj1.obter_saldo()}")
+print(f"Receberá emprestimo = {conta_pj1.solicitar_emprestimo(2000)}")
+
+conta_pj1.sacar((int(input("Quanto deseja sacar? "))))
+print(f"Saldo atual é {conta_pj1.obter_saldo()}")
+print(f"Receberá empréstimo = ", conta_pj1.solicitar_emprestimo(2000))
