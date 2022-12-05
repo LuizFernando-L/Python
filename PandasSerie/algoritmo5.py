@@ -26,6 +26,7 @@ series_dados.loc['111.111.111-11']
 #in 7
 series_dados = pd.Series([10.2, -1, None, 15, 23.4])
 
+
 print('Quantidade de linhas = ', series_dados.shape) # Retorna uma tupla com o número de linhas
 
 print('Tipo de dados', series_dados.dtypes) # Retorna o tipo de dados, se for misto será object
@@ -61,4 +62,9 @@ lista_idades = [32, 22, 25, 29, 38]
 #in 9
 
 pd.DataFrame(lista_nomes, columns=['nome'])
+
+#in 10
+
+pd.DataFrame(lista_nomes, columns=['nome'], index=lista_cpfs)
+
 
