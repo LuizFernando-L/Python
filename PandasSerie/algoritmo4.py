@@ -8,3 +8,6 @@ pandas.read_json(path_or_buf=None, orient=None, typ='frame',
                  compression='infer')
 #in 2
 pd.read_json("https://api.bcb.gov.br/dados/serie/bcdata.sgs.11/dados?formato=json").head()
+
+#in 3
+pd.read_csv("https://people.sc.fsu.edu/~jburkardt/data/csv/cities.csv").head()
