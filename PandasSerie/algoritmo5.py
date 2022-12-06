@@ -126,3 +126,11 @@ colunas = ['nomes', 'cpfs']
 df_duas_colunas = df_dados[colunas]
 print(type(df_duas_colunas))
 df_duas_colunas
+
+#in 16
+
+import requests
+
+texto_string = requests.get('https://www.nytimes.com/interactive/2017/06/23/opinion/trumps-lies.html').text
+
+print(texto_string[:100])
