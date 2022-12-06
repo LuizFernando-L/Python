@@ -120,3 +120,9 @@ df_uma_coluna = df_dados['idades']
 print(type(df_uma_coluna))
 print('Média de idades = ', df_uma_coluna.mean())
 df_uma_coluna
+
+#in 15
+colunas = ['nomes', 'cpfs']
+df_duas_colunas = df_dados[colunas]
+print(type(df_duas_colunas))
+df_duas_colunas
